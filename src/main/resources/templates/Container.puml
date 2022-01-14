@@ -1,0 +1,1 @@
+Component({podname.replaceAll("-", "_")}_{item.name.replaceAll("-", "_")}, "{resource_name or 'Container'}: {item.name}", "OCI Container", "image: {item.image}", $sprite=container)

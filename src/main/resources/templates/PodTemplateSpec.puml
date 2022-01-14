@@ -1,0 +1,8 @@
+Component(pod_{name.replaceAll("-", "_")}, "Pod/{name}", "k8s Pod", $sprite=pod) {
+    {#for container in item.spec.initContainers.orEmpty}
+        {#include Container.puml podname=name item=container resource_name="Init Container" /}
+    {/for}
+    {#for container in item.spec.containers}
+        {#include Container.puml podname=name item=container /}
+    {/for}
+}

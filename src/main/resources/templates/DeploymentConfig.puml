@@ -1,0 +1,4 @@
+Container(dc_{item.metadata.name}, "dc/{item.metadata.name}", "OpenShift DeploymentConfig", "", $sprite=deploy) {
+{#include PodTemplateSpec.puml name=item.metadata.name item=item.spec.template /}
+
+}

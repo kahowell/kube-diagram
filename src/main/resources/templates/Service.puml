@@ -1,0 +1,8 @@
+Container(service_{item.metadata.name}, "svc/{item.metadata.name}", "k8s Service", "Ports:\n\
+{#for port in item.spec.ports}\
+* Name: {port.name.orEmpty} Port: {port.port}\n\
+{/for}\
+", $sprite=svc) {
+
+
+}

@@ -1,0 +1,4 @@
+Container(cj_{item.metadata.name}, "cronjob/{item.metadata.name}", "k8s CronJob", "schedule: {item.spec.schedule}", $sprite=cronjob) {
+{#include PodTemplateSpec.puml name=item.metadata.name item=item.spec.jobTemplate.spec.template /}
+
+}
